@@ -32,9 +32,25 @@
               <img src="./images/search-icon.svg" alt="search" />
             </form>
             <div class="user">
-              <img src="./images/profile-img.svg" alt="profile" />
-              <span>Константин</span>
-              <img src="./images/arrow-down.svg" alt="arrow-down" />
+              <button class="profile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+                  <path d="M13.5 2.16663C7.51671 2.16663 2.66663 7.01671 2.66663 13C2.66663 18.9832 7.51671 23.8333 13.5 23.8333C19.4832 23.8333 24.3333 18.9832 24.3333 13C24.3333 7.01671 19.4832 2.16663 13.5 2.16663ZM13.5 4.33329C18.2861 4.33329 22.1666 8.21379 22.1666 13C22.1666 14.7304 21.6525 16.3378 20.7786 17.6909L19.9449 17.0455C18.2636 15.7488 15.165 15.1666 13.5 15.1666C11.8349 15.1666 8.73522 15.7488 7.05497 17.0455L6.22131 17.693C5.34684 16.3396 4.83329 14.731 4.83329 13C4.83329 8.21379 8.71379 4.33329 13.5 4.33329ZM13.5 6.22913C11.5586 6.22913 9.97913 7.80863 9.97913 9.74996C9.97913 11.6913 11.5586 13.2708 13.5 13.2708C15.4413 13.2708 17.0208 11.6913 17.0208 9.74996C17.0208 7.80863 15.4413 6.22913 13.5 6.22913ZM13.5 8.39579C14.2464 8.39579 14.8541 9.00354 14.8541 9.74996C14.8541 10.4964 14.2464 11.1041 13.5 11.1041C12.7535 11.1041 12.1458 10.4964 12.1458 9.74996C12.1458 9.00354 12.7535 8.39579 13.5 8.39579ZM13.5 17.3333C16.8591 17.3333 18.6654 18.5991 19.5112 19.2334C17.9524 20.7369 15.8365 21.6666 13.5 21.6666C11.1634 21.6666 9.04748 20.7369 7.48873 19.2334C8.33452 18.5991 10.1409 17.3333 13.5 17.3333ZM19.9047 18.8229C19.7859 18.9535 19.6673 19.0849 19.5408 19.208C19.667 19.0856 19.7849 18.9529 19.9047 18.8229Z" fill="#886486"/>
+                </svg>
+                <span>Константин</span>
+                <img class="arrow" src="./images/arrow-down.svg" alt="arrow-down" />
+              </button>
+              <div class="profile-content">
+                <a class="" href="#"> Профиль</a>
+                <a href="#"> Мои покупки</a>
+                <a href="#"> Настройки</a>
+                <p class="line"></p>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M10.1894 9.75H5.25V8.25H10.1892L8.46964 6.53039L9.53029 5.46973L13.0606 9.00006L9.53029 12.5304L8.46964 11.4697L10.1894 9.75Z" fill="#5A2957"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3.75C2.25 2.92179 2.92179 2.25 3.75 2.25H14.25C15.0782 2.25 15.75 2.92179 15.75 3.75V14.25C15.75 15.0782 15.0782 15.75 14.25 15.75H3.75C2.92179 15.75 2.25 15.0782 2.25 14.25V3.75ZM14.25 3.75H3.75V14.25H14.25V3.75Z" fill="#5A2957"/>
+                  </svg>
+                  Выход</a>
+              </div>
             </div>
             <div class="navbar_icons">
               <a href="#">
@@ -72,20 +88,111 @@
             </div>
           </div>
           <ul class="nav_links">
-            <!-- <span>&times;</span> -->
+            <!-- dropdown -->
             <li class="hamburg">
-              <a href="#">
+              <a  class="dropbtn" href="#">
                 <img src="./images/catalog-bars.svg" alt="" />
                 Каталог товаров</a
               >
+           
+              <div id="drop-content" class="dropdown-content hidden_menu">
+                  <div class="dropdown-content-left">
+                    <p class="drop-item "><a class="link " data-aside="1" href="#">Оборудование </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link"  data-aside="2" href="#">Косметика </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="3" href="#">Текстиль </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="4" href="#">Тапочки </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="5" href="#">Мебель </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="6"  href="#">Посуда </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="7" href="#">Аксессуары </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link"  data-aside="8" href="#">Продукты питания </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="9" href="#">Моющие средства </a><img src="./images/arrow-right.svg" alt=""></p>
+                    <p class="drop-item"><a class="link" data-aside="10" href="#">Расходные материалы </a><img src="./images/arrow-right.svg" alt=""></p>
+                    
+                  </div>
+                  <div class="dropdown-content-right">
+                       <div class="section dropdown-content-1 active" data-section="1">
+                            <div class="dropdown-content-wrapper-1">
+                                <div class="dropdown-content-info">
+                                  <h4 class="dropdown-content-title">Уборка помещений</h4>
+                                  <span class="dropdown-content-text">Душевые и санузлы</span>
+                                  <span class="dropdown-content-text">Ковровые покрытия</span>
+                                  <span  class="dropdown-content-text">Мебель и стекла</span>
+                                  <span class="dropdown-content-text">Полы</span>
+                                  <span class="dropdown-content-text">Специальные средства</span>
+                                  <span class="dropdown-content-text">Чистка бассейнов</span>
+                                </div>
+                                <div class="dropdown-content-info">
+                                  <h4 class="dropdown-content-title">Кухня</h4>
+                                  <span class="dropdown-content-text">Средства для посудомоечных машин</span>
+                                  <span class="dropdown-content-text">Средства для ручной мойки посуды</span>
+                                  <span class="dropdown-content-text">Средства для удаления жира</span>
+                                  <span class="dropdown-content-text">Средства для удаления нагара</span>
+                                  <span class="dropdown-content-text">Специальные средства</span>
+                                  <span class="dropdown-content-text">Средства для чистки кофемашин</span>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="section dropdown-content-1" data-section="2">
+                        <div class="dropdown-content-wrapper-1">
+                            <div class="dropdown-content-info">
+                              <h4 class="dropdown-content-title">Кухня</h4>
+                              <span class="dropdown-content-text">Душевые и санузлы</span>
+                              <span class="dropdown-content-text">Ковровые покрытия</span>
+                              <span  class="dropdown-content-text">Мебель и стекла</span>
+                              <span class="dropdown-content-text">Полы</span>
+                              <span class="dropdown-content-text">Специальные средства</span>
+                              <span class="dropdown-content-text">Чистка бассейнов</span>
+                            </div>
+                            <div class="dropdown-content-info">
+                              <h4 class="dropdown-content-title">Уборка помещений</h4>
+                              <span class="dropdown-content-text">Средства для посудомоечных машин</span>
+                              <span class="dropdown-content-text">Средства для ручной мойки посуды</span>
+                              <span class="dropdown-content-text">Средства для удаления жира</span>
+                              <span class="dropdown-content-text">Средства для удаления нагара</span>
+                              <span class="dropdown-content-text">Специальные средства</span>
+                              <span class="dropdown-content-text">Средства для чистки кофемашин</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="section dropdown-content-1" data-section="3">
+                        <div class="dropdown-content-wrapper-1">
+                            <div class="dropdown-content-info">
+                              <h4 class="dropdown-content-title">Кухня</h4>
+                              <span class="dropdown-content-text">Душевые и санузлы</span>
+                              <span class="dropdown-content-text">Ковровые покрытия</span>
+                              <span  class="dropdown-content-text">Мебель и стекла</span>
+                              <span class="dropdown-content-text">Полы</span>
+                              <span class="dropdown-content-text">Специальные средства</span>
+                              <span class="dropdown-content-text">Чистка бассейнов</span>
+                            </div>
+                            
+                        </div>
+                      </div>
+                      <div class="section dropdown-content-1" data-section="4">
+                        <div class="dropdown-content-wrapper-1">
+                            <div class="dropdown-content-info">
+                              <h4 class="dropdown-content-title">Уборка помещений</h4>
+                              <span class="dropdown-content-text">Средства для посудомоечных машин</span>
+                              <span class="dropdown-content-text">Средства для ручной мойки посуды</span>
+                              <span class="dropdown-content-text">Средства для удаления жира</span>
+                              <span class="dropdown-content-text">Средства для удаления нагара</span>
+                              <span class="dropdown-content-text">Специальные средства</span>
+                              <span class="dropdown-content-text">Средства для чистки кофемашин</span>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+
+              </div>
             </li>
-            <li><a href="#"> Оборудование </a></li>
-            <li><a href="#"> Косметика</a></li>
-            <li><a href="#"> Текстиль</a></li>
-            <li><a href="#">Тапочки</a></li>
-            <li><a href="#">Посуда</a></li>
-            <li><a href="#">Аксессуары</a></li>
-            <li><a href="#">Продукты питания</a></li>
+            <!-- dropdown end -->
+            <li ><a class="nav_item" href="#"> Оборудование </a></li>
+            <li><a  class="nav_item" href="#"> Косметика</a></li>
+            <li><a  class="nav_item" href="#"> Текстиль</a></li>
+            <li><a  class="nav_item" href="#">Тапочки</a></li>
+            <li><a  class="nav_item" href="#">Посуда</a></li>
+            <li><a  class="nav_item" href="#">Аксессуары</a></li>
+            <li><a  class="nav_item" href="#">Продукты питания</a></li>
           </ul>
         </nav>
       </div>
@@ -925,6 +1032,38 @@
         mousewheel: true,
         keyboard: true,
       });
+      
+      // dropdown start
+      let  hamburg = document.querySelector(".hamburg");
+      let dropdownContent = document.querySelector("#drop-content")
+      hamburg.addEventListener("click", () => {
+        dropdownContent.classList.toggle("hidden_menu");
+      })
+
+  
+    const asideItems = document.querySelectorAll(".link[data-aside]");
+  const sections = document.querySelectorAll(".section");
+
+  asideItems.forEach((item) => {
+    item.addEventListener("mouseenter", (event) => {
+      event.preventDefault();
+
+      asideItems.forEach((i) => i.classList.remove("active"));
+      item.classList.add("active");
+
+      const asideValue = item.getAttribute("data-aside");
+
+      sections.forEach((section) => section.classList.remove("active"));
+
+      const activeSection = document.querySelector(`.section[data-section="${asideValue}"]`);
+      if (activeSection) {
+        activeSection.classList.add("active");
+      }
+    })
+  })
+  
+    
+    
     </script>
   </body>
 </html>
