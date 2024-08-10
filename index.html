@@ -92,7 +92,7 @@
             <li class="hamburg">
               <a  class="dropbtn" href="#">
                 <img src="./images/catalog-bars.svg" alt="" />
-                Каталог товаров</a
+                <span  class="catalog_hidden">Каталог товаров</span></a
               >
            
               <div id="drop-content" class="dropdown-content hidden_menu">
@@ -186,13 +186,13 @@
               </div>
             </li>
             <!-- dropdown end -->
-            <li ><a class="nav_item" href="#"> Оборудование </a></li>
-            <li><a  class="nav_item" href="#"> Косметика</a></li>
-            <li><a  class="nav_item" href="#"> Текстиль</a></li>
-            <li><a  class="nav_item" href="#">Тапочки</a></li>
-            <li><a  class="nav_item" href="#">Посуда</a></li>
-            <li><a  class="nav_item" href="#">Аксессуары</a></li>
-            <li><a  class="nav_item" href="#">Продукты питания</a></li>
+            <li class="catalog_hidden" ><a class="nav_item" href="#"> Оборудование </a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#"> Косметика</a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#"> Текстиль</a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#">Тапочки</a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#">Посуда</a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#">Аксессуары</a></li>
+            <li class="catalog_hidden"><a  class="nav_item" href="#">Продукты питания</a></li>
           </ul>
         </nav>
       </div>
@@ -570,175 +570,306 @@
       </section>
     </div>
     <!-- About end -->
-    <!-- Services start -->
-    <section class="services">
+    <section class="product-block product-block_bg-gray">
       <div class="container">
-        <h2>популярные товары</h2>
-        <div class="services_wrapper">
-          <div class="services_card">
-              <div class="img">
-                <img src="./images/services-img-1.png" alt="services-img-1.png" />
-                <span>Скидка 10%</span>
-              </div>
-              <div class="right">
-                <h4>BRILLFORN - Для Удаления Нестойких Нагаров</h4>
-                <p class="text">Эффективное средство для удаления нестойких нагаров. Объем — 750мл</p>
-                <img class="star" src="./images/star.svg" alt="star" />
-                <p class="view">38 отзывов</p>
-                <img class="heart" src="./images/services-heart-icon.svg" alt="" />
-                <img src="./images/services-icon-2.svg" alt="" />
-                <div class="right_bottom">
-                  <div class="price">
-                    <p class="now">2 114 ₸</p>
-                    <p class="old_price">3 000 ₸</p>
+          <div class="product-block__inner">
+              <div class="section__title">популярные товары</div>
+              <div class="product-block__items product-block__items-popular">
+  
+                  <div class="product-block__items__popular_wrapper">
+                      <div class="product-block__item product-block__item_size_l">
+                          <div class="product-block__item__badge">
+                              Скидка 10%
+                          </div>
+                         
+                          <div class="product-block__item__img">
+                              <img src="./images/services-img-1.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  BRILLFORN - Для Удаления Нестойких Нагаров
+                              </div>
+                              <div class="product-block__item__desc">
+                                  Эффективное средство для удаления нестойких нагаров. Объем — 750мл
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      38 отзывов
+                                  </div>
+                              </div>
+                              <div class="product-block__item__actions">
+                                  <a href="#" class="product__action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"/>
+                                        </svg>
+                                  </a>
+                                  <a href="#" class="product__action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"></path>
+                                        </svg>
+                                  </a>
+                              </div>
+                              <div class="product-block__item__bottom">
+                                  <div class="product-block__item__bottom_price">2 114 ₸ <span class="old_price">3000 ₸</span></div>
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                              <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"/>
+                                            </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="product-block__item">
+                          <div class="product-block__item__badge">
+                              Скидка 10%
+                          </div>
+                          <div class="product-block__item__hover">
+                              <a href="#" class="product__action_save product__action ">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                              <a href="#" class="product__action_stats product__action">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"></path>
+                                    </svg>
+                              </a>
+                          </div>
+                          <div class="product-block__item__img">
+                              <img src="./images/services-img-2.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      10 отзывов
+                                  </div>
+                              </div>
+                              <div class="product-block__item__bottom">
+                                  <div class="product-block__item__bottom_price">36 680 ₸</div>
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                              <path d="M5.41406 3.49609L2.00391 3.51367L2.01367 5.51367L4.08398 5.50391L7.37891 13.4082L6.18164 15.3242C5.78164 15.9642 5.76095 16.7726 6.12695 17.4316C6.49295 18.0906 7.18741 18.5 7.94141 18.5H20V16.5H7.94141L7.87695 16.3828L9.05273 14.5H16.5215C17.2485 14.5 17.9175 14.1047 18.2695 13.4707L21.873 6.98633C22.046 6.67633 22.0413 6.29819 21.8613 5.99219C21.6813 5.68719 21.352 5.5 20.998 5.5H6.25L5.41406 3.49609ZM7.08203 7.5H19.2988L16.5215 12.5H9.16602L7.08203 7.5ZM8 19.5C7.46957 19.5 6.96086 19.7107 6.58579 20.0858C6.21071 20.4609 6 20.9696 6 21.5C6 22.0304 6.21071 22.5391 6.58579 22.9142C6.96086 23.2893 7.46957 23.5 8 23.5C8.53043 23.5 9.03914 23.2893 9.41421 22.9142C9.78929 22.5391 10 22.0304 10 21.5C10 20.9696 9.78929 20.4609 9.41421 20.0858C9.03914 19.7107 8.53043 19.5 8 19.5ZM18 19.5C17.4696 19.5 16.9609 19.7107 16.5858 20.0858C16.2107 20.4609 16 20.9696 16 21.5C16 22.0304 16.2107 22.5391 16.5858 22.9142C16.9609 23.2893 17.4696 23.5 18 23.5C18.5304 23.5 19.0391 23.2893 19.4142 22.9142C19.7893 22.5391 20 22.0304 20 21.5C20 20.9696 19.7893 20.4609 19.4142 20.0858C19.0391 19.7107 18.5304 19.5 18 19.5Z" fill="#202020"/>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="product-block__item">
+                          <div class="product-block__item__hover">
+                              <a href="#" class="product__action_save product__action ">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                              <a href="#" class="product__action_stats product__action">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                          </div>
+                          <div class="product-block__item__img">
+                              <img src="./images/services-img-3.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  1 LAV - Средство Для Механической Стирки Белья
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star-icon-4.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      10 отзывов
+                                  </div>
+                              </div>
+                              <div class="product-block__item__bottom">
+                                  <div class="product-block__item__bottom_price">75 466 ₸</div>
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                              <path d="M5.41406 3.49609L2.00391 3.51367L2.01367 5.51367L4.08398 5.50391L7.37891 13.4082L6.18164 15.3242C5.78164 15.9642 5.76095 16.7726 6.12695 17.4316C6.49295 18.0906 7.18741 18.5 7.94141 18.5H20V16.5H7.94141L7.87695 16.3828L9.05273 14.5H16.5215C17.2485 14.5 17.9175 14.1047 18.2695 13.4707L21.873 6.98633C22.046 6.67633 22.0413 6.29819 21.8613 5.99219C21.6813 5.68719 21.352 5.5 20.998 5.5H6.25L5.41406 3.49609ZM7.08203 7.5H19.2988L16.5215 12.5H9.16602L7.08203 7.5ZM8 19.5C7.46957 19.5 6.96086 19.7107 6.58579 20.0858C6.21071 20.4609 6 20.9696 6 21.5C6 22.0304 6.21071 22.5391 6.58579 22.9142C6.96086 23.2893 7.46957 23.5 8 23.5C8.53043 23.5 9.03914 23.2893 9.41421 22.9142C9.78929 22.5391 10 22.0304 10 21.5C10 20.9696 9.78929 20.4609 9.41421 20.0858C9.03914 19.7107 8.53043 19.5 8 19.5ZM18 19.5C17.4696 19.5 16.9609 19.7107 16.5858 20.0858C16.2107 20.4609 16 20.9696 16 21.5C16 22.0304 16.2107 22.5391 16.5858 22.9142C16.9609 23.2893 17.4696 23.5 18 23.5C18.5304 23.5 19.0391 23.2893 19.4142 22.9142C19.7893 22.5391 20 22.0304 20 21.5C20 20.9696 19.7893 20.4609 19.4142 20.0858C19.0391 19.7107 18.5304 19.5 18 19.5Z" fill="#202020"/>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="product-block__item">
+                          <div class="product-block__item__badge">
+                              Скидка 10%
+                          </div>
+                          <div class="product-block__item__hover">
+                              <a href="#" class="product__action_save product__action ">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                              <a href="#" class="product__action_stats product__action">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                          </div>
+                          <div class="product-block__item__img">
+                              <img src="./images/services-img-6.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  Argan Лосьон Для Тела 30 Мл
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      10 отзывов
+                                  </div>
+                              </div>
+                              <div class="product-block__item__bottom">
+                                  
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart  button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                              <path d="M5.41406 3.49609L2.00391 3.51367L2.01367 5.51367L4.08398 5.50391L7.37891 13.4082L6.18164 15.3242C5.78164 15.9642 5.76095 16.7726 6.12695 17.4316C6.49295 18.0906 7.18741 18.5 7.94141 18.5H20V16.5H7.94141L7.87695 16.3828L9.05273 14.5H16.5215C17.2485 14.5 17.9175 14.1047 18.2695 13.4707L21.873 6.98633C22.046 6.67633 22.0413 6.29819 21.8613 5.99219C21.6813 5.68719 21.352 5.5 20.998 5.5H6.25L5.41406 3.49609ZM7.08203 7.5H19.2988L16.5215 12.5H9.16602L7.08203 7.5ZM8 19.5C7.46957 19.5 6.96086 19.7107 6.58579 20.0858C6.21071 20.4609 6 20.9696 6 21.5C6 22.0304 6.21071 22.5391 6.58579 22.9142C6.96086 23.2893 7.46957 23.5 8 23.5C8.53043 23.5 9.03914 23.2893 9.41421 22.9142C9.78929 22.5391 10 22.0304 10 21.5C10 20.9696 9.78929 20.4609 9.41421 20.0858C9.03914 19.7107 8.53043 19.5 8 19.5ZM18 19.5C17.4696 19.5 16.9609 19.7107 16.5858 20.0858C16.2107 20.4609 16 20.9696 16 21.5C16 22.0304 16.2107 22.5391 16.5858 22.9142C16.9609 23.2893 17.4696 23.5 18 23.5C18.5304 23.5 19.0391 23.2893 19.4142 22.9142C19.7893 22.5391 20 22.0304 20 21.5C20 20.9696 19.7893 20.4609 19.4142 20.0858C19.0391 19.7107 18.5304 19.5 18 19.5Z" fill="#202020"/>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="product-block__item">
+                          <div class="product-block__item__hover">
+                              <a href="#" class="product__action_save product__action ">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                              <a href="#" class="product__action_stats product__action">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"/>
+                                    </svg>
+                              </a>
+                          </div>
+                          
+                          <div class="product-block__item__img">
+  
+                              <img src="./images/services-img-7.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  Отбеливатель На Основе Кислорода, 1 Кг OXY POWDER Hotel Expert
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star-icon-3.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      10 отзывов
+                                  </div>
+                              </div>
+                             
+                              <div class="product-block__item__bottom">
+                                  <div class="product-block__item__bottom_price">7 670  ₸</div>
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                              <path d="M5.41406 3.49609L2.00391 3.51367L2.01367 5.51367L4.08398 5.50391L7.37891 13.4082L6.18164 15.3242C5.78164 15.9642 5.76095 16.7726 6.12695 17.4316C6.49295 18.0906 7.18741 18.5 7.94141 18.5H20V16.5H7.94141L7.87695 16.3828L9.05273 14.5H16.5215C17.2485 14.5 17.9175 14.1047 18.2695 13.4707L21.873 6.98633C22.046 6.67633 22.0413 6.29819 21.8613 5.99219C21.6813 5.68719 21.352 5.5 20.998 5.5H6.25L5.41406 3.49609ZM7.08203 7.5H19.2988L16.5215 12.5H9.16602L7.08203 7.5ZM8 19.5C7.46957 19.5 6.96086 19.7107 6.58579 20.0858C6.21071 20.4609 6 20.9696 6 21.5C6 22.0304 6.21071 22.5391 6.58579 22.9142C6.96086 23.2893 7.46957 23.5 8 23.5C8.53043 23.5 9.03914 23.2893 9.41421 22.9142C9.78929 22.5391 10 22.0304 10 21.5C10 20.9696 9.78929 20.4609 9.41421 20.0858C9.03914 19.7107 8.53043 19.5 8 19.5ZM18 19.5C17.4696 19.5 16.9609 19.7107 16.5858 20.0858C16.2107 20.4609 16 20.9696 16 21.5C16 22.0304 16.2107 22.5391 16.5858 22.9142C16.9609 23.2893 17.4696 23.5 18 23.5C18.5304 23.5 19.0391 23.2893 19.4142 22.9142C19.7893 22.5391 20 22.0304 20 21.5C20 20.9696 19.7893 20.4609 19.4142 20.0858C19.0391 19.7107 18.5304 19.5 18 19.5Z" fill="#202020"/>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="product-block__item product-block__item_size_l">
+                         
+                          <div class="product-block__item__img">
+                              <img src="./images/services-img-8.png" alt="">
+                          </div>
+                         <div class="product-block__item__content">
+                              <div class="product-block__item__name">
+                                  Кондиционер 30мл Golden Standard Hotel Market
+                              </div>
+                              <div class="product-block__item__desc">
+                                  Кондиционер с ароматом ванили, 8*125 шт, 1000 шт в коробке
+                              </div>
+                              <div class="product-block__item__review">
+                                  <div class="product-block__item__reiviews_star">
+                                      <img src="./images/star-icon-4.svg" alt="">
+                                  </div>
+                                  <div class="product-block__item__reviews_number">
+                                      10 отзывов
+                                  </div>
+                              </div>
+                              <div class="product-block__item__actions">
+                                  <a href="#" class="product__action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M16.5 4C13.605 4 12 6.09 12 6.09C12 6.09 10.395 4 7.5 4C4.462 4 2 6.462 2 9.5C2 13.671 6.912 17.713 8.281 18.99C9.858 20.46 12 22.35 12 22.35C12 22.35 14.142 20.46 15.719 18.99C17.088 17.713 22 13.671 22 9.5C22 6.462 19.538 4 16.5 4Z" fill="#5A2957"></path>
+                                        </svg>
+                                  </a>
+                                  <a href="#" class="product__action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                          <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16Z" fill="#5A2957"></path>
+                                        </svg>
+                                  </a>
+                              </div>
+                              <div class="product-block__item__bottom">
+                                  <div class="product-block__item__bottom_price">101 ₸</div>
+                                  <div class="product-block__item__bottom_action">
+                                      <a href="#" class="button__cart button__cart-s">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                              <path d="M5.41406 3.49609L2.00391 3.51367L2.01367 5.51367L4.08398 5.50391L7.37891 13.4082L6.18164 15.3242C5.78164 15.9642 5.76095 16.7726 6.12695 17.4316C6.49295 18.0906 7.18741 18.5 7.94141 18.5H20V16.5H7.94141L7.87695 16.3828L9.05273 14.5H16.5215C17.2485 14.5 17.9175 14.1047 18.2695 13.4707L21.873 6.98633C22.046 6.67633 22.0413 6.29819 21.8613 5.99219C21.6813 5.68719 21.352 5.5 20.998 5.5H6.25L5.41406 3.49609ZM7.08203 7.5H19.2988L16.5215 12.5H9.16602L7.08203 7.5ZM8 19.5C7.46957 19.5 6.96086 19.7107 6.58579 20.0858C6.21071 20.4609 6 20.9696 6 21.5C6 22.0304 6.21071 22.5391 6.58579 22.9142C6.96086 23.2893 7.46957 23.5 8 23.5C8.53043 23.5 9.03914 23.2893 9.41421 22.9142C9.78929 22.5391 10 22.0304 10 21.5C10 20.9696 9.78929 20.4609 9.41421 20.0858C9.03914 19.7107 8.53043 19.5 8 19.5ZM18 19.5C17.4696 19.5 16.9609 19.7107 16.5858 20.0858C16.2107 20.4609 16 20.9696 16 21.5C16 22.0304 16.2107 22.5391 16.5858 22.9142C16.9609 23.2893 17.4696 23.5 18 23.5C18.5304 23.5 19.0391 23.2893 19.4142 22.9142C19.7893 22.5391 20 22.0304 20 21.5C20 20.9696 19.7893 20.4609 19.4142 20.0858C19.0391 19.7107 18.5304 19.5 18 19.5Z" fill="#202020"/>
+                                          </svg>
+                                      </a>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+  
                   </div>
-                  <a class="cart" href="#">
-                    <img src="./images/black-cart.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-           
-          </div>
-          <div class="services_card-2">
-            <a href="#">
-              <div class="img">
-                <img src="./images/services-img-2.png" alt="" />
-              </div>
-              <div class="right">
-                <h4>Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL</h4>
-                <div class="rating">
-                  <img src="./images/star.svg" alt="star" />
-                  <span>10 отзывов</span>
-                </div>
-                <div class="right_bottom">
-                  <div class="price">
-                    <p>36 680 ₸</p>
+  
+                  <div class="product-block__categories">
+                      <div class="product-block__categories__item">
+                          <a href="#" class="product-block__categories__link"></a>
+                          <a href="#" class="product-block__categories__img"><img src="./images/services-img-4.png" alt=""></a>
+                          <a href="#" class="product-block__categories__text">Тапочки</a>
+  
+                      </div>
+                      <div class="product-block__categories__item">
+                          <a href="#" class="product-block__categories__link"></a>
+                          <a href="#" class="product-block__categories__img"><img src="./images/services-img-5.png" alt=""></a>
+                          <a href="#" class="product-block__categories__text">Текстиль</a>
+  
+                      </div>
+                      <div class="product-block__categories__item">
+                          <a href="#" class="product-block__categories__link"></a>
+                          <a href="#" class="product-block__categories__img"><img src="./images/services-img-9.png" alt=""></a>
+                          <a href="#" class="product-block__categories__text">Посуда</a>
+  
+                      </div>
+                      <div class="product-block__categories__item">
+                          <a href="#" class="product-block__categories__link"></a>
+                          <a href="#" class="product-block__categories__img"><img src="./images/services-img-10.png" alt=""></a>
+                          <a href="#" class="product-block__categories__text">Косметика</a>
+                      </div>
                   </div>
-                  <a class="cart" href="#">
-                    <img src="./images/black-cart.svg" alt="" />
-                  </a>
-                </div>
               </div>
-            </a>
           </div>
-          <div class="services_card-2">
-           <a href="#">
-            <div class="img">
-              <img src="./images/services-img-3.png" alt="" />
-            </div>
-            <div class="right">
-              <h4>Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL</h4>
-              <div class="rating">
-                <img src="./images/star-icon-3.svg" alt="star" />
-                <span>10 отзывов</span>
-              </div>
-              <div class="right_bottom">
-                <div class="price">
-                  <p>75 466 ₸</p>
-                </div>
-                <a class="cart" href="#">
-                  <img src="./images/black-cart.svg" alt="" />
-                </a>
-              </div>
-            </div>
-           </a>
-          </div>
-          <div class="services_card-3 hidden">
-            <a href="#" class="about_card">
-              <div class="overlay"></div>
-              <img src="./images/services-img-4.png" alt="about-img" />
-              <h4>Оборудование</h4>
-            </a>
-            <a href="#" class="about_card">
-              <div class="overlay"></div>
-              <img src="./images/services-img-5.png" alt="about-img" />
-              <h4>Текстиль</h4>
-            </a>
-          </div>
-        </div>
-        <div class="services_wrapper">
-          <div class="services_card-2">
-            <a href="#">
-              <div class="img">
-                <img src="./images/services-img-6.png" alt="" />
-                <span>Скидка 10%</span>
-              </div>
-              <div class="right">
-                <h4>Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL</h4>
-                <div class="rating">
-                  <img src="./images/star-icon-4.svg" alt="star" />
-                  <span>10 отзывов</span>
-                </div>
-                <div class="right_bottom">
-                  <div class="price">
-                    <p>320 ₸</p>
-                    <p class="old_price">500 ₸</p>
-                  </div>
-                  <a class="cart" href="#">
-                    <img src="./images/black-cart.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="services_card-2">
-            <a href="#">
-              <div class="img">
-                <img src="./images/services-img-7.png" alt="" />
-              </div>
-              <div class="right">
-                <h4>Отбеливатель На Основе Кислорода, 1 Кг OXY POWDER Hotel Expert</h4>
-                <div class="rating">
-                  <img src="./images/star-icon-4.svg" alt="star" />
-                  <span>10 отзывов</span>
-                </div>
-                <div class="right_bottom">
-                  <div class="price">
-                    <p>75 466 ₸</p>
-                  </div>
-                  <a class="cart" href="#">
-                    <img src="./images/black-cart.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="services_card">
-            <div class="img">
-              <img src="./images/services-img-8.png" alt="services-img-1.png" />
-            </div>
-            <div class="right">
-              <h4>Кондиционер 30мл Golden Standard Hotel Market</h4>
-              <p class="text">Кондиционер с ароматом ванили, 8*125 шт, 1000 шт в коробке</p>
-              <img class="star" src="./images/star.svg" alt="star" />
-              <p class="view">38 отзывов</p>
-              <img class="heart" src="./images/services-heart-icon.svg" alt="" />
-              <img src="./images/services-icon-2.svg" alt="" />
-              <div class="right_bottom">
-                <div class="price">
-                  <p class="now">101 ₸</p>
-                </div>
-                <a class="cart" href="#">
-                  <img src="./images/black-cart.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="services_card-3 hidden">
-            <a href="#" class="about_card">
-              <div class="overlay"></div>
-              <img src="./images/services-img-9.png" alt="about-img" />
-              <h4>Оборудование</h4>
-            </a>
-            <a href="#" class="about_card">
-              <div class="overlay"></div>
-              <img src="./images/services-img-10.png" alt="about-img" />
-              <h4>Текстиль</h4>
-            </a>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
+  
     <!-- Services end -->
     <!-- product start -->
     <section class="product">
@@ -749,13 +880,26 @@
             <a href="#">
               <div class="img">
                 <img src="./images/services-img-3.png" alt="img" />
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>1 LAV - Средство Для Механической Стирки Белья</h4>
-              <div class="rating">
+              <div class="rating ">
                 <img src="./images/star-icon-3.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <span>75 466 ₸</span>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -765,13 +909,26 @@
             <a href="#">
               <div class="img">
                 <img src="./images/product-img.png" alt="img" />
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>Холодильник для отеля BC-60J Hotel Expert</h4>
               <div class="rating">
                 <img src="./images/star.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <span>90 500 ₸</span>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -781,13 +938,26 @@
             <a class="product_card_contain" href="#">
               <div class="img">
                 <img src="./images/services-img-6.png" alt="img" />
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>Argan Лосьон Для Тела 30 Мл</h4>
               <div class="rating">
                 <img src="./images/star-icon-4.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <span>320 ₸</span>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -798,13 +968,26 @@
             <div class="img">
               <img src="./images/services-img-2.png" alt="img" />
               <span>Скидка 10%</span>
+              <div class="product_card_hover_content">
+                <a class="heart_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+                <a class="diagram_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+               
+               </div>
             </div>
             <h4>Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL</h4>
             <div class="rating">
               <img src="./images/star.svg" alt="" />
               <span> 10 отзывов </span>
             </div>
-            <div class="price">
+            <div class="price product_card_bottom_content">
               <p><span>36 680 ₸ </span> <span class="old_price">40 466 ₸</span></p>
               <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
             </div>
@@ -815,13 +998,26 @@
               <div class="img">
                 <img src="./images/services-img-7.png" alt="img" />
                 <span>Скидка 10%</span>
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>Отбеливатель На Основе Кислорода, 1 Кг OXY POWDER Hotel Expert</h4>
               <div class="rating">
                 <img src="./images/star-icon-4.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <p><span>7 670 ₸</span> <span class="old_price">8 000 ₸</span></p>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -839,13 +1035,26 @@
             <div class="img">
               <img src="./images/services-img-6.png" alt="img" />
               <span>Скидка 10%</span>
+              <div class="product_card_hover_content">
+                <a class="heart_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+                <a class="diagram_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+               
+               </div>
             </div>
             <h4>Argan Лосьон Для Тела 30 Мл</h4>
             <div class="rating">
               <img src="./images/star-icon-4.svg" alt="" />
               <span> 10 отзывов </span>
             </div>
-            <div class="price">
+            <div class="price product_card_bottom_content">
               <span>320 ₸</span>
               <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
             </div>
@@ -856,13 +1065,26 @@
               <div class="img">
                 <img src="./images/services-img-3.png" alt="img" />
                 <span>Скидка 10%</span>
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>1 LAV - Средство Для Механической Стирки Белья</h4>
               <div class="rating">
                 <img src="./images/star-icon-3.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <span>75 466 ₸</span>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -872,13 +1094,26 @@
             <a href="#">
               <div class="img">
                 <img src="./images/services-img-2.png" alt="img" />
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>Полотенца Бумажные Рулонные TORK Advanced Hotel Expert SL</h4>
               <div class="rating">
                 <img src="./images/star.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <p><span>36 680 ₸ </span> <span class="old_price">40 466 ₸</span></p>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -888,13 +1123,26 @@
            <a href="#">
             <div class="img">
               <img src="./images/services-img-7.png" alt="img" />
+              <div class="product_card_hover_content">
+                <a class="heart_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+                <a class="diagram_icon" href="#">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                  </svg>
+                </a>
+               
+               </div>
             </div>
             <h4>Отбеливатель На Основе Кислорода, 1 Кг OXY POWDER Hotel Expert</h4>
             <div class="rating">
               <img src="./images/star-icon-4.svg" alt="" />
               <span> 10 отзывов </span>
             </div>
-            <div class="price">
+            <div class="price product_card_bottom_content">
               <p><span>7 670 ₸</span> <span class="old_price">8 000 ₸</span></p>
               <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
             </div>
@@ -904,13 +1152,26 @@
             <a href="#">
               <div class="img">
                 <img src="./images/product-img.png" alt="img" />
+                <div class="product_card_hover_content">
+                  <a class="heart_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M16.5039 4.5C13.6089 4.5 12.0039 6.59 12.0039 6.59C12.0039 6.59 10.3989 4.5 7.50391 4.5C4.46591 4.5 2.00391 6.962 2.00391 10C2.00391 14.171 6.91591 18.213 8.28491 19.49C9.86191 20.96 12.0039 22.85 12.0039 22.85C12.0039 22.85 14.1459 20.96 15.7229 19.49C17.0919 18.213 22.0039 14.171 22.0039 10C22.0039 6.962 19.5419 4.5 16.5039 4.5ZM14.8149 17.61C14.6379 17.77 14.4839 17.909 14.3589 18.026C13.6079 18.726 12.7199 19.529 12.0039 20.171C11.2879 19.529 10.3989 18.725 9.64891 18.026C9.52291 17.909 9.36891 17.769 9.19291 17.61C7.77291 16.327 4.00391 12.919 4.00391 10C4.00391 8.07 5.57391 6.5 7.50391 6.5C9.33091 6.5 10.3899 7.775 10.4179 7.808L12.0039 9.5L13.5899 7.808C13.5999 7.795 14.6769 6.5 16.5039 6.5C18.4339 6.5 20.0039 8.07 20.0039 10C20.0039 12.919 16.2349 16.327 14.8149 17.61Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                  <a class="diagram_icon" href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 3C4.90694 3 4 3.90694 4 5V19C4 20.0931 4.90694 21 6 21H9C10.0931 21 11 20.0931 11 19V5C11 3.90694 10.0931 3 9 3H6ZM6 5H9V19H6V5ZM16 7C14.9069 7 14 7.90694 14 9V19C14 20.0931 14.9069 21 16 21H19C20.0931 21 21 20.0931 21 19V9C21 7.90694 20.0931 7 19 7H16ZM16 9H19V19H16V9Z" fill="#5A2957"/>
+                    </svg>
+                  </a>
+                 
+                 </div>
               </div>
               <h4>Холодильник для отеля BC-60J Hotel Expert</h4>
               <div class="rating">
                 <img src="./images/star.svg" alt="" />
                 <span> 10 отзывов </span>
               </div>
-              <div class="price">
+              <div class="price product_card_bottom_content">
                 <span>90 500 ₸</span>
                 <a class="cart" href="#"><img src="./images/black-cart.svg" alt="" /></a>
               </div>
@@ -1061,8 +1322,6 @@
       }
     })
   })
-  
-    
     
     </script>
   </body>
